@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malan Amirtha Yogan Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="page" id="page1">
+            <header>
+                <h1>Malan Amirtha Yogan</h1>
+                <p>Welcome to my artistic journey!</p>
+            </header>
+            <section>
+                <p>
+                    Hi! I'm Malan Amirtha Yogan, a passionate artist dedicated to bringing creativity to life through unique expressions. 
+                    My work explores the beauty of imagination and storytelling, blending tradition with modernity. Dive into my world of art and explore the stories behind each creation.
+                </p>
+                <button onclick="scrollToPage('page2')">Contact Me</button>
+            </section>
+        </div>
+
+        <div class="page" id="page2">
+            <header>
+                <h1>Contact Me</h1>
+            </header>
+            <section>
+                <p>WhatsApp: <a href="https://wa.me/919159435671" target="_blank">+91 9159435671</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/yogankathir.yogankathir" target="_blank">Malan Amirtha Yogan</a></p>
+                <button onclick="scrollToPage('page1')">Back to Intro</button>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function scrollToPage(pageId) {
+            document.getElementById(pageId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
